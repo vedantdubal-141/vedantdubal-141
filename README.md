@@ -62,11 +62,13 @@ $ uptime
 ![Node.js](src/skills/nodejs.svg)
 ![React](src/skills/react.svg)
 ![Express](src/skills/express.svg)
-![Ansible](src/skills/ansible.svg)
 
-<!-- Uncomment when confident:
+![MongoDB](src/skills/mongodb.svg)
+
+<!-- 
 ![Python](src/skills/python.svg)
 ![Terraform](src/skills/terraform.svg)
+![Ansible](src/skills/ansible.svg)
 -->
 
 ---

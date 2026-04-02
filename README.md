@@ -30,43 +30,43 @@ $ uptime
 ## Skills
 
 #### Infrastructure & DevOps
-![Linux](https://img.shields.io/badge/Linux-Arch%20%7C%20Ubuntu%20%7C%20Debian-1793D1?style=flat-square&logo=archlinux&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
- <!--  ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white) -->
+![Linux](src/skills/linux.svg)
+![Docker](src/skills/docker.svg)
+![Kubernetes](src/skills/kubernetes.svg)
+![GitHub Actions](src/skills/github-actions.svg)
+![Jenkins](src/skills/jenkins.svg)
+ <!--  ![Nginx](src/skills/nginx.svg) -->
 
 #### Monitoring & Networking
-<!-- ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) -->
-<!-- ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) -->
-![SSH](https://img.shields.io/badge/SSH-333?style=flat-square&logo=gnubash&logoColor=white)
-![DNS](https://img.shields.io/badge/DNS%20%7C%20VLANs-333?style=flat-square&logo=gnubash&logoColor=white)
+<!-- ![Grafana](src/skills/grafana.svg) -->
+<!-- ![Prometheus](src/skills/prometheus.svg) -->
+![SSH](src/skills/ssh.svg)
+![DNS](src/skills/dns.svg)
 
 #### Languages
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Bash](src/skills/bash.svg)
+![C++](src/skills/cpp.svg)
 
 #### AI / ML Infra
-![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white)
+![CUDA](src/skills/cuda.svg)
+![PyTorch](src/skills/pytorch.svg)
+![FFmpeg](src/skills/ffmpeg.svg)
 
 #### Tools
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![Git](src/skills/git.svg)
+![GitHub](src/skills/github.svg)
+![Postman](src/skills/postman.svg)
+![Figma](src/skills/figma.svg)
 
 #### Familiar With *(know enough to be dangerous)*
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
+![Node.js](src/skills/nodejs.svg)
+![React](src/skills/react.svg)
+![Express](src/skills/express.svg)
+![Ansible](src/skills/ansible.svg)
 
 <!-- Uncomment when confident:
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Python](src/skills/python.svg)
+![Terraform](src/skills/terraform.svg)
 -->
 
 ---
@@ -76,7 +76,7 @@ $ uptime
 ### [DockForge](https://github.com/vedantdubal-141/dockyard)
 > Docker environment automation — clone, run one command, done. (•̀ᴗ•́)و
 
-![DockForge demo](https://vedantdubal-141.github.io/0xvoid/images/dockforge.gif)
+![DockForge demo](src/images/dockforge.gif)
 
 Tired of "works on my machine." Built an automated setup that provisions full application stacks from a single command. Auto-discovers apps and Dockerfiles, builds containers, handles cleanup, and validates everything on every push via GitHub Actions CI.
 
@@ -89,7 +89,7 @@ Tired of "works on my machine." Built an automated setup that provisions full ap
 ### Arch Linux Homelab + Android Chroot
 > Running Linux without a second computer. ¯\(°_o)/¯
 
-![chroot vs proot](https://vedantdubal-141.github.io/0xvoid/images/root.png)
+![chroot vs proot](src/images/root.png)
 
 Manually installed Arch Linux from scratch — partition tables, kernel selection (linux-zen for the latency wins), bootloader config, and a TUI display manager because ASCII art login screens are a valid life choice.
 
@@ -102,7 +102,7 @@ Also self-hosted: Nextcloud, Nginx with SSL, VLANs, reverse proxy.
 ### RVC Voice Model Training
 > 8 hours of continuous GPU training on Arch Linux. What could go wrong. (ಠ_ಠ)
 
-![RVC training](https://vedantdubal-141.github.io/0xvoid/images/rvc.gif)
+![RVC training](src/images/rvc.gif)
 
 Everything. Everything went wrong first.
 
@@ -144,14 +144,33 @@ I document what I actually do on LinkedIn — not polished tutorials, just what 
 
 ## Find Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vedant-p-dubal-2107733a4)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/vedantdubal-141)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com/@vedantdubal)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://x.com/vedantdubal)
+[![LinkedIn](src/skills/linkedin.svg)](https://www.linkedin.com/in/vedant-p-dubal-2107733a4)
+[![GitHub](src/skills/github.svg)](https://github.com/vedantdubal-141)
+<!-- [![YouTube](src/skills/youtube.svg)](https://youtube.com/) -->
+<!-- [![Twitter](src/skills/twitter.svg)](https://x.com/) -->
 
 ---
 
-## Contribution Graph
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=vedantdubal-141&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vedantdubal-141&theme=tokyonight&hide_border=true&area=true" alt="Contribution Activity" />
+</p>
+
+<div align="center">
+  <p><b>⭐ If you like my work, consider giving a star to my repositories!</b></p>
+  <a href="https://github.com/vedantdubal-141?tab=repositories">
+    <img src="src/skills/view_repos.svg" alt="View My Repos" />
+  </a>
+</div>
+
+---
+
+## 🐍 Contribution Snake Graph
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vedantdubal-141/vedantdubal-141/output/github-snake-dark.svg" />

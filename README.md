@@ -49,7 +49,7 @@ $ uptime
 
 #### AI / ML Infra
 ![CUDA](src/skills/cuda.svg)
-![PyTorch](src/skills/pytorch.svg)
+<!-- ![PyTorch](src/skills/pytorch.svg) -->
 ![FFmpeg](src/skills/ffmpeg.svg)
 
 #### Tools

@@ -1,0 +1,36 @@
+mkdir -p src/skills src/images
+
+declare -A badges
+badges["linux"]="https://img.shields.io/badge/Linux-Arch%20%7C%20Ubuntu%20%7C%20Debian-1793D1?style=flat-square&logo=archlinux&logoColor=white"
+badges["docker"]="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
+badges["kubernetes"]="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"
+badges["github-actions"]="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white"
+badges["jenkins"]="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white"
+badges["nginx"]="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white"
+badges["grafana"]="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white"
+badges["prometheus"]="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white"
+badges["ssh"]="https://img.shields.io/badge/SSH-333?style=flat-square&logo=gnubash&logoColor=white"
+badges["dns"]="https://img.shields.io/badge/DNS%20%7C%20VLANs-333?style=flat-square&logo=gnubash&logoColor=white"
+badges["bash"]="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white"
+badges["cpp"]="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white"
+badges["cuda"]="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white"
+badges["pytorch"]="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"
+badges["ffmpeg"]="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white"
+badges["git"]="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
+badges["github"]="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"
+badges["postman"]="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white"
+badges["figma"]="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"
+badges["nodejs"]="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"
+badges["react"]="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"
+badges["express"]="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"
+badges["ansible"]="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white"
+badges["python"]="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"
+badges["terraform"]="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white"
+badges["linkedin"]="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"
+badges["youtube"]="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white"
+badges["twitter"]="https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white"
+
+for name in "${!badges[@]}"; do
+    echo "Downloading $name..."
+    curl -s -L "${badges[$name]}" -o "src/skills/$name.svg"
+done

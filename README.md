@@ -22,7 +22,7 @@ $ whoami
 devops-in-progress | sysadmin | homelab guy | occasionally breaks things on purpose
 
 $ uptime
-1st year B.Tech @ Rai University, Ahmedabad — since 2024
+00:00:00
 ```
 
 ---

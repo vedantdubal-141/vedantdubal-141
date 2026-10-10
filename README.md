@@ -60,7 +60,23 @@ Govt compliance audits are usually slow, painful, and manual. For Smart India Ha
 
 ---
 
-### 3. RVC Voice Model Training
+### 3. [AI Navigation Assistant (Mobile C++ Engine)](https://github.com/Souvik6222/AI_Navigation_Assistant)
+> Squeezing a 2GB Python PyTorch pipeline into a lean 10MB C++ ARM binary for real-time edge navigation (⌐■_■)
+
+![AI Navigation Assistant](src/ai_assisastant/ai_assistant.jpeg)
+
+Built in collaboration with [@Souvik6222](https://github.com/Souvik6222/). Souvik developed the original Python prototype using PyTorch, YOLOv8, and MiDaS to assist visually impaired individuals with distance and directional voice guidance.
+
+Then came the edge problem: running PyTorch + TorchHub on low-power mobile hardware turns phones into pocket heaters and drains batteries in minutes. I converted the entire pipeline into **Modern C++17** and ported it to **Android ARM64** using **ONNX Runtime**:
+
+- **Stripped the 2GB PyTorch Runtime:** Rewrote the inference and vision pipeline into native C++17 with ONNX Runtime C++ and OpenCV, shrinking the runtime down to a standalone **~10MB native binary** for ARM64 and Android.
+- **Dual-Model Edge Vision:** Pipelined real-time YOLOv8 object detection with MiDaS monocular depth estimation and directional zone classification (Left / Center / Right).
+- **Greedy Tracking Engine:** Replaced heavy SciPy Hungarian matching with an efficient C++ greedy IoU tracker, velocity vectors, and multi-frame temporal confirmation to eliminate false-alarm spam.
+- **Android NDK & JNI Bridge:** Wired the native C++ engine into an Android APK via JNI for hardware camera capture and asynchronous text-to-speech audio alerts.
+
+---
+
+### 4. RVC Voice Model Training
 > 8 hours of continuous GPU training on Arch Linux. What could go wrong. (ಠ_ಠ)
 
 ![RVC training](src/images/rvc.gif)
@@ -70,6 +86,16 @@ Everything. Everything went wrong first.
 Fought through Python 3.12 + PEP 668 restrictions, NVIDIA PyPI timeouts pulling 500MB+ CUDA packages, torch compatibility hell, and a mid-training power cut that killed the session at epoch 20.
 
 Logs were still intact. Resumed from checkpoint. Finished at 200 epochs, 14,000 steps, RTX 4070 running at 7.7GB/8GB VRAM the whole time.
+
+---
+
+## Open Source *(When Things Break)*
+
+I don't actively hunt open source contributions — but when tools crash in my terminal or catalogs lag behind, I dig into the tracebacks:
+
+- **(OPENCODE, Major one) [models.dev#3761](https://github.com/anomalyco/models.dev/pull/3761)** — Updated the Groq provider catalog for `models.dev` adding Qwen 3.6 27B and ALLaM 2 7B specifications verified directly from upstream Groq API endpoints.
+- **[harlequin#982](https://github.com/tconbeer/harlequin/issues/982)** — Isolated and reproduced an unhandled crash in Harlequin (Terminal SQL IDE) where executing `USE <database>;` in MySQL/MariaDB passed a trailing semicolon into reconnect routines (`Unknown database 'db;'`). Maintainer reproduced and released the fix in `harlequin-mysql v1.3.1`.
+
 
 ---
 
@@ -87,7 +113,9 @@ I document what I actually do on LinkedIn — not polished tutorials, just what 
 
 - Linux boot process (UEFI → initramfs → systemd)
 - Manual Arch Linux install walkthrough
-- Running Linux chroot on Android without a second machine
+- AI agent arenas: testing LLM debugging capabilities under adversarial build environments
+- Building high-throughput vision pipelines in Rust with ONNX Runtime
+- Porting PyTorch deep learning models to C++ and Android ARM64
 - RVC voice model training on Linux (parts 1 & 2)
 - Windows boot failure diagnosis and full recovery
 - Git/SSH debugging under hackathon pressure

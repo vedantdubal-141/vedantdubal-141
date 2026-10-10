@@ -44,16 +44,19 @@ Tired of AI agents claiming they can automate DevOps until they run into a real 
 
 ---
 
-### 2. Arch Linux Homelab + Android Chroot
-> Running Linux without a second computer. ¯\(°_o)/¯
+### 2. [Themis: Statutory Metrology Vision Engine](https://github.com/vedantdubal-141/Themis/)
+> Auditing Indian packaging compliance at 150ms per label with zero VRAM. 
+> **🏆 Selected for SIH 2026 Phase 2 (Major Backend Contributor)**
 
-![chroot vs proot](src/images/root.png)
+![Themis SIH Packaging Inspection](src/images/sih/sih.jpeg)
 
-Manually installed Arch Linux from scratch — partition tables, kernel selection (linux-zen for the latency wins), bootloader config, and a TUI display manager because ASCII art login screens are a valid life choice.
+Govt compliance audits are usually slow, painful, and manual. For Smart India Hackathon (SIH 2026), I served as the **major backend contributor**, engineering the high-throughput native Rust engine that verifies legal metrology (LMPC Rules 2011) and computes statutory Jan Vishwas compounding penalties directly off packaging photos.
 
-When I needed a second machine to experiment on and didn't have one, I rooted an Android phone with Magisk and set up a full chroot environment inside Termux. Real kernel interfaces, bind-mounted `/proc /sys /dev`, near-native performance — no proot overhead.
-
-Also self-hosted: Nextcloud, Nginx with SSL, VLANs, reverse proxy.
+- **100% Native Rust Backend:** Deep text detection (DBNet, 2.4MB) and sequence recognition (PP-OCRv4, 7.4MB) executed via ONNX Runtime on CPU/ARM — clocking **140–160ms latency per image using 0 MB VRAM**.
+- **Line-Quantized Total-Order Sorting:** Real packaging is warped, cylindrical, and curved; naive bbox sorters crash from non-transitive comparisons. Engineered a line-quantized total-order sorter guaranteeing strict mathematical transitivity ($A \le B \land B \le C \implies A \le C$) on distorted labels.
+- **Multi-Panel SKU Graph:** Aggregates tokens across front, back, and crimp panels into a single entity to audit mandatory declarations (MRP, Net Quantity, Mfg Date, Postal PIN).
+- **Tokio Concurrency Profiles:** Configured dynamic worker profiles (e.g. 5/6 cores = 23 threads saturated) chewing through batch directories without freezing the OS or starving HTTP I/O.
+- **Flutter Multi-Modal GUI:** Paired the native Rust daemon with a sleek Flutter desktop/mobile interface with a 120Hz canvas zoom and interactive bounding-box evidence overlays.
 
 ---
 

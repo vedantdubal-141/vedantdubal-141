@@ -122,12 +122,18 @@ I document what I actually do on LinkedIn — not polished tutorials, just what 
 
 ---
 
-## Currently Exploring
+## Currently Exploring & Local Deep Learning
 
-- Kubernetes cluster management at scale
-- Infrastructure as Code (Terraform / Ansible)
-- SRE practices and incident response
-- Linux kernel internals — going deeper `(。・_・。)`
+Beyond infrastructure and sysadmin, I've been progressively moving up the stack into training and experimenting with deep learning models locally on bare metal (RTX 4070 on Arch Linux). Not calling black-box APIs — actually writing custom PyTorch training loops, managing CUDA memory limits, and building the bridge from research models to optimized native runtimes:
+
+- **Biomedical Vision & Ultrasound Segmentation:** Training U-Net architectures for muscle architecture segmentation from ultrasound cine-loops, implementing 1-pixel morphological skeletonization, and temporal smoothing across sequential frames.
+- **Chemoinformatics & Mass Spectrometry:** Architecting multi-task neural fingerprint networks (`FPNet`, predicting 10,226 structural bits) to map tandem MS/MS spectra to molecular structures, integrating RDKit graph canonicalization and forward spectrum simulation.
+- **Spatiotemporal Deep Learning:** Designing attention-based spatiotemporal networks for complex time-series sensor flows and multivariate dynamic forecasting.
+- **Scientific Vision & Astro-Informatics:** Building morphological feature extraction and segmentation pipelines on solar filament physics imagery.
+- **Abstract Reasoning & Local LLMs:** Experimenting with programmatic grid priors (ARC-AGI reasoning), local open-weight models, and MoE evaluation under hardware constraints.
+- **Systems & Edge Inference:** Compressing trained PyTorch weights down to ONNX Runtime (C++ / Rust / ARM), TensorRT, and INT8 quantization for sub-millisecond edge execution.
+- **Linux Kernel & Systems Internals:** Going deeper into cgroups, memory subsystems, and kernel-level performance tuning `(。・_・。)`.
+
 
 ---
 

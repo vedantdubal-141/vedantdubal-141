@@ -1,11 +1,11 @@
 # Vedant P. Dubal
 
-**DevOps · SRE · System Administrator**
+**DevOps · AI/ML Systems · Edge Inference**
 
 > Hey, I'm Vedant — first-year B.Tech student.
 > I spend my time breaking Linux installations, fixing them, and calling it learning. ¯\_(ツ)_/¯
 
-I work on the layer between code and the metal it runs on — infrastructure automation, container orchestration, system reliability, and occasionally training AI models at 2 AM while laptop fans scream at 8000 RPM.
+I work on the layer between code and the metal it runs on — infrastructure automation, container orchestration, high-throughput model inference, and deploying C++/Rust runtimes at 2 AM while laptop fans scream at 8000 RPM.
 
 Not a tutorial follower. I pick something, break it badly enough that I *have* to understand it to fix it, then write about what actually happened — not the clean version.
 
@@ -14,12 +14,12 @@ Not a tutorial follower. I pick something, break it badly enough that I *have* t
 ## What I Actually Work On
 
 ```
-infrastructure automation  →  containers & orchestration  →  keep systems alive
+infrastructure automation  →  edge AI & native runtimes (C++/Rust)  →  keep systems alive
 ```
 
 ```bash
 $ whoami
-devops-in-progress | sysadmin | homelab guy | occasionally breaks things on purpose
+devops + aiml systems | edge inference | homelab guy | occasionally breaks things on purpose
 
 $ uptime
 00:00:00
@@ -27,68 +27,24 @@ $ uptime
 
 ---
 
-## Skills
-
-#### Infrastructure & DevOps
-![Linux](src/skills/linux.svg)
-![Docker](src/skills/docker.svg)
-![Kubernetes](src/skills/kubernetes.svg)
-![GitHub Actions](src/skills/github-actions.svg)
-![Jenkins](src/skills/jenkins.svg)
- <!--  ![Nginx](src/skills/nginx.svg) -->
-
-#### Monitoring & Networking
-<!-- ![Grafana](src/skills/grafana.svg) -->
-<!-- ![Prometheus](src/skills/prometheus.svg) -->
-![SSH](src/skills/ssh.svg)
-![DNS](src/skills/dns.svg)
-
-#### Languages
-![Bash](src/skills/bash.svg)
-![C++](src/skills/cpp.svg)
-
-#### AI / ML Infra
-![CUDA](src/skills/cuda.svg)
-<!-- ![PyTorch](src/skills/pytorch.svg) -->
-![FFmpeg](src/skills/ffmpeg.svg)
-
-#### Tools
-![Git](src/skills/git.svg)
-![GitHub](src/skills/github.svg)
-![Postman](src/skills/postman.svg)
-![Figma](src/skills/figma.svg)
-
-#### Familiar With *(know enough to be dangerous)*
-![Node.js](src/skills/nodejs.svg)
-![React](src/skills/react.svg)
-![Express](src/skills/express.svg)
-
-![MongoDB](src/skills/mongodb.svg)
-
-<!-- 
-![Python](src/skills/python.svg)
-![Terraform](src/skills/terraform.svg)
-![Ansible](src/skills/ansible.svg)
--->
-
----
-
 ## Projects
 
-### [DockForge](https://github.com/vedantdubal-141/dockyard)
-> Docker environment automation — clone, run one command, done. (•̀ᴗ•́)و
+### 1. [DockYard Evolution: Agent Arena](https://github.com/vedantdubal-141/DockYard-Evolution-Agent-Arena-Private.git)
+> A gym-like RL/LLM arena where AI agents must debug broken DevOps & build cascades — and we actively lie to them. (•̀ᴗ•́)و
+> **🏆 Selected for Phase 2 (Scaler × OpenEnv × PyTorch × Hugging Face Hackathon)**
 
-![DockForge demo](src/images/dockforge.gif)
+![DockYard Evolution Demo](src/images/Demo_OpenEnv.gif)
 
-Tired of "works on my machine." Built an automated setup that provisions full application stacks from a single command. Auto-discovers apps and Dockerfiles, builds containers, handles cleanup, and validates everything on every push via GitHub Actions CI.
+Tired of AI agents claiming they can automate DevOps until they run into a real broken multi-stage build. Built an adversarial evaluation arena simulating cascading software debugging failures across Docker, Java/Spring, and Rust/WASM build graphs.
 
-- Bash automation engine with zero-config auto-discovery
-- GitHub Actions CI/CD pipeline — catches build errors before deployment
-- Docker auto-installer, cleanup scripts, full lifecycle automation
+- **Order-dependent prerequisite gating:** Designed DAG reward structures. You can't brute-force point-farm; prerequisite fixes must pass in sequence before unlocking subsequent rewards.
+- **"The Lie" scenario:** The compiler log intentionally injects a fake OpenSSL crypto hash error to test whether the model actually reads configuration files or just hallucinates from log text.
+- **Hidden regression tests:** Grader punishes destructive "lazy rewrites" that solve a build error by silently nuking critical infrastructure like `EXPOSE 8080`.
+- **The 35B MoE Breakthrough:** Benchmarked dense vs MoE architectures — watched Qwen 3.5 35B A3B Apex figure out multi-file dependency edits in 2 steps while running at a chill 70°C, saving the CPU from a 95°C thermal meltdown.
 
 ---
 
-### Arch Linux Homelab + Android Chroot
+### 2. Arch Linux Homelab + Android Chroot
 > Running Linux without a second computer. ¯\(°_o)/¯
 
 ![chroot vs proot](src/images/root.png)
@@ -101,7 +57,7 @@ Also self-hosted: Nextcloud, Nginx with SSL, VLANs, reverse proxy.
 
 ---
 
-### RVC Voice Model Training
+### 3. RVC Voice Model Training
 > 8 hours of continuous GPU training on Arch Linux. What could go wrong. (ಠ_ಠ)
 
 ![RVC training](src/images/rvc.gif)
